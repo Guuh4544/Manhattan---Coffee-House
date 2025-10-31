@@ -471,44 +471,41 @@ body {
     border-bottom: 1px solid rgba(196, 164, 124, 0.3);
   }
 
+  /* Ajustando background-size para reduzir zoom no mobile */
   .container-parallax1,
   .container-parallax2,
   .container-parallax3,
   .container-parallax4,
   .container-parallax5 {
     background-attachment: scroll;
+    background-size: auto 100%;
   }
 
   .container-parallax1 {
     background-position: center center;
-    background-size: cover;
     min-height: 100vh;
   }
 
   .container-parallax2 {
-    background-position: center 40%;
-    background-size: cover;
+    background-position: center center;
     min-height: 350px;
     height: 60vh;
   }
 
   .container-parallax3 {
-    background-position: center 30%;
-    background-size: cover;
+    background-position: center center;
     min-height: 350px;
     height: 60vh;
   }
 
   .container-parallax4 {
     background-position: center center;
-    background-size: cover;
     min-height: auto;
     padding: 80px 20px 40px;
   }
 
   .container-parallax5 {
-    background-position: center 35%;
-    background-size: cover;
+    background-position: center center;
     min-height: auto;
     padding: 80px 20px 40px;
   }
@@ -556,30 +553,39 @@ body {
     line-height: 28px;
   }
 
+  /* Ajustando ainda mais para telas muito pequenas */
+  .container-parallax1,
+  .container-parallax2,
+  .container-parallax3,
+  .container-parallax4,
+  .container-parallax5 {
+    background-size: 100% auto;
+  }
+
   .container-parallax1 {
     background-position: center center;
     min-height: 100vh;
   }
 
   .container-parallax2 {
-    background-position: center 45%;
+    background-position: center center;
     min-height: 300px;
     height: 50vh;
   }
 
   .container-parallax3 {
-    background-position: center 35%;
+    background-position: center center;
     min-height: 300px;
     height: 50vh;
   }
 
   .container-parallax4 {
-    background-position: center 40%;
+    background-position: center center;
     padding: 70px 15px 30px;
   }
 
   .container-parallax5 {
-    background-position: center 40%;
+    background-position: center center;
     padding: 70px 15px 30px;
     gap: 30px;
   }
