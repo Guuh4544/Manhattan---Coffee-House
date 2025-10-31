@@ -130,7 +130,7 @@ body {
 .container-parallax1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("./img/img1.png");
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
