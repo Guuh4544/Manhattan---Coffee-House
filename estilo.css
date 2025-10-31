@@ -22,6 +22,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 /* Menu mobile adicionado */
