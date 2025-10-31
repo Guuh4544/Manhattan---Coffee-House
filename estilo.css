@@ -479,6 +479,40 @@ body {
     background-attachment: scroll;
   }
 
+  .container-parallax1 {
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+  }
+
+  .container-parallax2 {
+    background-position: center 40%;
+    background-size: cover;
+    min-height: 350px;
+    height: 60vh;
+  }
+
+  .container-parallax3 {
+    background-position: center 30%;
+    background-size: cover;
+    min-height: 350px;
+    height: 60vh;
+  }
+
+  .container-parallax4 {
+    background-position: center center;
+    background-size: cover;
+    min-height: auto;
+    padding: 80px 20px 40px;
+  }
+
+  .container-parallax5 {
+    background-position: center 35%;
+    background-size: cover;
+    min-height: auto;
+    padding: 80px 20px 40px;
+  }
+
   .map-container {
     height: 300px;
   }
@@ -520,6 +554,38 @@ body {
 
   .container-contatos p {
     line-height: 28px;
+  }
+
+  .container-parallax1 {
+    background-position: center center;
+    min-height: 100vh;
+  }
+
+  .container-parallax2 {
+    background-position: center 45%;
+    min-height: 300px;
+    height: 50vh;
+  }
+
+  .container-parallax3 {
+    background-position: center 35%;
+    min-height: 300px;
+    height: 50vh;
+  }
+
+  .container-parallax4 {
+    background-position: center 40%;
+    padding: 70px 15px 30px;
+  }
+
+  .container-parallax5 {
+    background-position: center 40%;
+    padding: 70px 15px 30px;
+    gap: 30px;
+  }
+
+  .map-container {
+    height: 250px;
   }
 }
 
