@@ -471,46 +471,44 @@ body {
     border-bottom: 1px solid rgba(196, 164, 124, 0.3);
   }
 
+  /* Ajustando imagens parallax para tablets - usando cover com posição otimizada */
   .container-parallax1,
   .container-parallax2,
   .container-parallax3,
   .container-parallax4,
   .container-parallax5 {
     background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .container-parallax1 {
-    background-position: center center;
-    background-size: cover;
     min-height: 100vh;
+    background-position: center 40%;
   }
 
   .container-parallax2 {
-    background-position: center 40%;
-    background-size: cover;
-    min-height: 350px;
+    min-height: 400px;
     height: 60vh;
+    background-position: center 30%;
   }
 
   .container-parallax3 {
-    background-position: center 30%;
-    background-size: cover;
-    min-height: 350px;
+    min-height: 400px;
     height: 60vh;
+    background-position: center 35%;
   }
 
   .container-parallax4 {
-    background-position: center center;
-    background-size: cover;
     min-height: auto;
     padding: 80px 20px 40px;
+    background-position: center 25%;
   }
 
   .container-parallax5 {
-    background-position: center 35%;
-    background-size: cover;
     min-height: auto;
     padding: 80px 20px 40px;
+    background-position: center 30%;
   }
 
   .map-container {
@@ -556,32 +554,42 @@ body {
     line-height: 28px;
   }
 
+  /* Ajustando imagens parallax para iPhone - usando cover com zoom reduzido */
+  .container-parallax1,
+  .container-parallax2,
+  .container-parallax3,
+  .container-parallax4,
+  .container-parallax5 {
+    background-size: auto 120%;
+    background-repeat: no-repeat;
+  }
+
   .container-parallax1 {
-    background-position: center center;
     min-height: 100vh;
+    background-position: center 35%;
   }
 
   .container-parallax2 {
-    background-position: center 45%;
-    min-height: 300px;
-    height: 50vh;
+    min-height: 350px;
+    height: 55vh;
+    background-position: center 25%;
   }
 
   .container-parallax3 {
-    background-position: center 35%;
-    min-height: 300px;
-    height: 50vh;
+    min-height: 350px;
+    height: 55vh;
+    background-position: center 30%;
   }
 
   .container-parallax4 {
-    background-position: center 40%;
     padding: 70px 15px 30px;
+    background-position: center 20%;
   }
 
   .container-parallax5 {
-    background-position: center 40%;
     padding: 70px 15px 30px;
     gap: 30px;
+    background-position: center 25%;
   }
 
   .map-container {
