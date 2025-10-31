@@ -129,7 +129,7 @@ body {
 /* Container Parallax 1 */
 .container-parallax1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("./img/parallax-imagem1.png");
+    url("/placeholder.svg?height=1080&width=1920");
   height: 100vh;
   display: flex;
   align-items: center;
@@ -188,7 +188,7 @@ body {
 /* Container Parallax 2 */
 .container-parallax2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("./img/parallax-imagem2.jpg");
+    url("/placeholder.svg?height=800&width=1920");
   height: 50vh;
   min-height: 400px;
   display: flex;
@@ -216,7 +216,7 @@ body {
 /* Container Parallax 3*/
 .container-parallax3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("./img/parallax-imagem3.jpg");
+    url("/placeholder.svg?height=800&width=1920");
   height: 50vh;
   min-height: 400px;
   display: flex;
@@ -227,7 +227,7 @@ body {
 /* Container Parallax 4 */
 .container-parallax4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./img/parallax-imagem4.png");
+    url("/placeholder.svg?height=1080&width=1920");
   min-height: 100vh;
   padding: 100px 20px 50px;
   display: flex;
@@ -314,7 +314,7 @@ body {
 .container-parallax5 {
   min-height: 80vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./img/cafeteria.jpg");
+    url("/placeholder.svg?height=1080&width=1920");
   padding: 100px 20px 50px;
   display: flex;
   flex-direction: column;
@@ -471,41 +471,38 @@ body {
     border-bottom: 1px solid rgba(196, 164, 124, 0.3);
   }
 
-  /* Ajustando background-size para reduzir zoom no mobile */
+  /* Reduzindo zoom das imagens parallax para tablets */
   .container-parallax1,
   .container-parallax2,
   .container-parallax3,
   .container-parallax4,
   .container-parallax5 {
     background-attachment: scroll;
-    background-size: auto 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 
   .container-parallax1 {
-    background-position: center center;
     min-height: 100vh;
   }
 
   .container-parallax2 {
-    background-position: center center;
     min-height: 350px;
     height: 60vh;
   }
 
   .container-parallax3 {
-    background-position: center center;
     min-height: 350px;
     height: 60vh;
   }
 
   .container-parallax4 {
-    background-position: center center;
     min-height: auto;
     padding: 80px 20px 40px;
   }
 
   .container-parallax5 {
-    background-position: center center;
     min-height: auto;
     padding: 80px 20px 40px;
   }
@@ -553,39 +550,36 @@ body {
     line-height: 28px;
   }
 
-  /* Ajustando ainda mais para telas muito pequenas */
+  /* Reduzindo ainda mais o zoom para smartphones/iPhone */
   .container-parallax1,
   .container-parallax2,
   .container-parallax3,
   .container-parallax4,
   .container-parallax5 {
-    background-size: 100% auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 
   .container-parallax1 {
-    background-position: center center;
     min-height: 100vh;
   }
 
   .container-parallax2 {
-    background-position: center center;
     min-height: 300px;
     height: 50vh;
   }
 
   .container-parallax3 {
-    background-position: center center;
     min-height: 300px;
     height: 50vh;
   }
 
   .container-parallax4 {
-    background-position: center center;
     padding: 70px 15px 30px;
   }
 
   .container-parallax5 {
-    background-position: center center;
     padding: 70px 15px 30px;
     gap: 30px;
   }
