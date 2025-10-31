@@ -560,7 +560,7 @@ body {
   .container-parallax3,
   .container-parallax4,
   .container-parallax5 {
-    background-size: cover 120%;
+    background-size: auto 120%;
     background-repeat: no-repeat;
   }
 
@@ -609,5 +609,73 @@ body {
 
   .container-parallax5 {
     padding: 80px 20px 40px;
+  }
+}
+@media (max-width: 480px) {
+  .topo {
+    height: 70px;
+  }
+
+  .topo img {
+    width: 60px;
+  }
+
+  .container-texto {
+    padding: 60px 15px;
+  }
+
+  .container-parallax2 h3,
+  .container-parallax3 h3 {
+    padding: 15px;
+  }
+
+  .container-contatos {
+    padding: 15px;
+  }
+
+  .container-contatos p {
+    line-height: 28px;
+  }
+
+  /* Corrigindo background-size para cover em mobile para melhor visualização */
+  .container-parallax1,
+  .container-parallax2,
+  .container-parallax3,
+  .container-parallax4,
+  .container-parallax5 {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .container-parallax1 {
+    min-height: 100vh;
+    background-position: center center;
+  }
+
+  .container-parallax2 {
+    min-height: 350px;
+    height: 55vh;
+    background-position: center center;
+  }
+
+  .container-parallax3 {
+    min-height: 350px;
+    height: 55vh;
+    background-position: center center;
+  }
+
+  .container-parallax4 {
+    padding: 70px 15px 30px;
+    background-position: center center;
+  }
+
+  .container-parallax5 {
+    padding: 70px 15px 30px;
+    gap: 30px;
+    background-position: center center;
+  }
+
+  .map-container {
+    height: 250px;
   }
 }
